@@ -7,7 +7,7 @@
 QTcpSocket *client = NULL;
 
 
-static QString ip = "47.98.58.0";
+static QString ip = "xxx.xxx.xxx.xxx";
 static int port = 7890;
 
 LoginWindow::LoginWindow(QWidget *parent) :
