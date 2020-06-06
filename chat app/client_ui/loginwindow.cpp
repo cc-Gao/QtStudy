@@ -7,6 +7,9 @@
 QTcpSocket *client = NULL;
 
 
+static QString ip = "47.98.58.0";
+static int port = 7890;
+
 LoginWindow::LoginWindow(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::LoginWindow)
@@ -34,7 +37,7 @@ LoginWindow::LoginWindow(QWidget *parent) :
       client = new QTcpSocket;
 
         //设置服务器的信息
-      client->connectToHost("47.98.58.0",7890);
+      client->connectToHost(ip,port);
 
       QString msg = "login:" + inputUserName +"\r\n\r\n" + inputPassword;
 
